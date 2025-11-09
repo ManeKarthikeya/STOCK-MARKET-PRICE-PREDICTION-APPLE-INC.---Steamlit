@@ -91,40 +91,44 @@ MSE: Mean Squared Error
 
 Prerequisites
 
-bash : python >= 3.8
-
-       pip install streamlit pandas scikit-learn matplotlib seaborn
+    python >= 3.8
+    
+    pip install streamlit pandas scikit-learn matplotlib seaborn
        
 Installation & Local Deployment
 
 1.Clone the repository:
 
-bash
-git clone https://github.com/ManeKarthikeya/STOCK-MARKET-PRICE-PREDICTION-APPLE-INC.---Steamlit.git
-cd STOCK-MARKET-PRICE-PREDICTION-APPLE-INC.---Steamlit
-Install dependencies:
+    git clone https://github.com/ManeKarthikeya/STOCK-MARKET-PRICE- PREDICTION-APPLE-INC.---Steamlit.git
+    cd STOCK-MARKET-PRICE-PREDICTION-APPLE-INC.---Steamlit
+    
+2.Install dependencies:
 
-bash
-pip install -r requirements.txt
-Run the application:
+    pip install -r requirements.txt
+    
+3.Run the application:
 
-bash
-streamlit run app.py
-Access the app:
+    streamlit run app.py
 
-text
-Local URL: http://localhost:8501
-Network URL: http://your_ip:8501
+4.Access the app:
+
+    Local URL: http://localhost:8501
+    Network URL: http://your_ip:8501
+    
 Deployment Options
+
 Streamlit Community Cloud (Recommended)
-bash
-# Deploy with one click from GitHub
-streamlit deploy
+
+    # Deploy with one click from GitHub
+    streamlit deploy
+    
 Heroku
-yaml
-# Add Procfile
-web: sh setup.sh && streamlit run app.py
+
+    # Add Procfile
+    web: sh setup.sh && streamlit run app.py
+    
 Other Platforms
+
 AWS EC2 - For scalable deployment
 
 Google Cloud Run - Serverless container deployment
@@ -132,35 +136,35 @@ Google Cloud Run - Serverless container deployment
 DigitalOcean - Simple droplet deployment
 
 📁 Project Structure
-text
-STOCK-MARKET-PREDICTION-STREAMLIT/
-├── app.py                          # Main Streamlit application
-├── stock_predictor.py              # ML model training and prediction logic
-├── requirements.txt                # Python dependencies
-├── AAPL.csv                        # Sample stock dataset
-├── assets/                         # Images and static files
-│   ├── screenshot.png
-│   └── demo.gif
-├── utils/
-│   └── data_loader.py              # Data loading utilities
-└── README.md                       # Project documentation
+
+    STOCK-MARKET-PREDICTION-STREAMLIT/
+    ├── venv                            # Enviornment
+    ├── app.py                          # Main Streamlit application
+    ├── requirements.txt                # Python dependencies
+    ├── AAPL.csv                        # Sample stock dataset
+    └── README.md                       # Project documentation
+
 🎮 How to Use the App
-Data Input: Enter Open, High, Low prices and Volume for prediction
 
-Model Selection: Choose automatic best model or select manually
+1.Data Input: Enter Open, High, Low prices and Volume for prediction
 
-Get Prediction: Click predict for instant next-day closing price forecast
+2.Model Selection: Choose automatic best model or select manually
 
-Analyze Results: View accuracy metrics and visual comparisons
+3.Get Prediction: Click predict for instant next-day closing price forecast
+
+4.Analyze Results: View accuracy metrics and visual comparisons
 
 🔧 Configuration
+
 Environment Variables
-python
-# For advanced deployment
-STOCK_DATA_PATH = "AAPL.csv"
-MODEL_SAVE_PATH = "models/"
-DEBUG_MODE = False
+
+    # For advanced deployment
+    STOCK_DATA_PATH = "AAPL.csv"
+    MODEL_SAVE_PATH = "models/"
+    DEBUG_MODE = False
+    
 Customization
+
 Modify stock_predictor.py to add new ML models
 
 Update app.py to change UI/UX components
@@ -168,7 +172,8 @@ Update app.py to change UI/UX components
 Extend data sources in utils/data_loader.py
 
 🤝 Contributing
-We welcome contributions! Please feel free to:
+
+I welcome contributions! Please feel free to:
 
 Report bugs and issues
 
@@ -179,4 +184,5 @@ Submit pull requests
 Improve documentation
 
 ⚠️ Important Disclaimer
+
 This application is for educational and research purposes only. Stock market predictions are inherently uncertain and should not be used for actual trading decisions. Always consult with qualified financial advisors before making investment choices.
