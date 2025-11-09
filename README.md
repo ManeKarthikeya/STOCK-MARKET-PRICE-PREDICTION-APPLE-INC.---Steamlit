@@ -144,6 +144,24 @@ DigitalOcean - Simple droplet deployment
     ├── AAPL.csv                        # Sample stock dataset
     └── README.md                       # Project documentation
 
+📊 Dataset Features
+
+The project uses historical AAPL stock data containing:
+
+Date: Trading date
+
+Open: Opening price
+
+High: Highest price during the day
+
+Low: Lowest price during the day
+
+Close: Closing price (Target Variable)
+
+Adj Close: Adjusted closing price
+
+Volume: Trading volume
+
 🎮 How to Use the App
 
 1.Data Input: Enter Open, High, Low prices and Volume for prediction
